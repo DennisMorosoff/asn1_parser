@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/asn1_parser.svg)](https://badge.fury.io/rb/asn1_parser)
+
 # Asn1Parser
 Short description and motivation.
 
