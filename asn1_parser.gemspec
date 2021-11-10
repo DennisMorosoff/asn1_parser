@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.summary     = 'Parser of Asn1 objects.'
   s.description = 'Parser of Asn1 objects.'
   s.license     = 'MIT'
-  s.required_ruby_version = '>= 2.7'
+  s.required_ruby_version = Gem::Requirement.new('>= 2.7')
 
   s.metadata = {
     'homepage_uri' => 'https://github.com/DennisMorosoff/asn1_parser',
@@ -24,9 +24,14 @@ Gem::Specification.new do |s|
     'bug_tracker_uri' => 'https://github.com/DennisMorosoff/asn1_parser/issues'
   }
 
-  s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'CHANGELOG.md', 'README.md']
+  s.files = Dir['lib/**/*', 'MIT-LICENSE', 'Rakefile', 'CHANGELOG.md', 'README.md']
+  s.test_files = Dir['spec/**/*']
 
+  s.add_development_dependency 'rails'
+  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'rubocop'
+  s.add_development_dependency 'sqlite3'
   s.add_development_dependency 'yard'
   s.add_dependency 'openssl', '~> 2.2.0'
   s.add_dependency 'rchardet', '~> 1.8.0'
