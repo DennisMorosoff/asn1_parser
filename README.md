@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/asn1_parser.svg)](https://badge.fury.io/rb/asn1_parser)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)](https://github.com/rubocop/rubocop)
 
 # Asn1Parser
 Short description and motivation.
